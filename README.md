@@ -1,6 +1,6 @@
 # Sorrel Documentation
 
-This repository contains the source code for the Sorrel documentation website, which is built with [Starlight](https://starlight.astro.build) and [Astro](https://astro.build).
+This repository contains the source code for the Sorrel documentation website.
 
 **This repository does not contain the source code for the Sorrel application itself.**
 
