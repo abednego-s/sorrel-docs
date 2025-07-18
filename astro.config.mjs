@@ -2,6 +2,8 @@
 import { defineConfig } from 'astro/config';
 import starlight from '@astrojs/starlight';
 
+const isProduction = process.env.NODE_ENV === 'production';
+
 // https://astro.build/config
 export default defineConfig({
 	integrations: [
@@ -18,6 +20,17 @@ export default defineConfig({
 						href: '/favicon.ico',
 					},
 				},
+				// Add Umami script only in production
+				// @ts-ignore
+				...(isProduction ? [{
+					tag: 'script',
+					attrs: {
+						async: true,
+						defer: true,
+						'data-website-id': '4216fbb9-08aa-4cd9-a355-73b2cbd0e40e',
+						src: 'https://cloud.umami.is/script.js'
+					}
+				}] : []),
 			],
 			title: 'Sorrel',
 			logo: {
