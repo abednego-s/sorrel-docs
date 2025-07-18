@@ -6,19 +6,45 @@ import starlight from '@astrojs/starlight';
 export default defineConfig({
 	integrations: [
 		starlight({
-			title: 'My Docs',
-			social: [{ icon: 'github', label: 'GitHub', href: 'https://github.com/withastro/starlight' }],
+			customCss: [
+				// Relative path to your custom CSS file
+				'./src/assets/custom.css',
+			],
+			head: [
+				{
+					tag: 'link',
+					attrs: {
+						rel: 'icon',
+						href: '/favicon.ico',
+					},
+				},
+			],
+			title: 'Sorrel',
+			logo: {
+				src: './src/assets/sorrel-logo.png',
+			},
 			sidebar: [
 				{
-					label: 'Guides',
+					label: 'Getting started',
 					items: [
-						// Each item here is one entry in the navigation menu.
-						{ label: 'Example Guide', slug: 'guides/example' },
+						{ label: 'Download and Install Sorrel', slug: 'guides/installation' },
+						{ label: 'Managing Workspaces', slug: 'guides/workspace' },
+						{ label: 'Create your first note', slug: 'guides/create-note' },
+						{ label: 'Export', slug: 'guides/export' },
+						{ label: 'Update Sorrel', slug: 'guides/update' },
 					],
 				},
 				{
-					label: 'Reference',
-					autogenerate: { directory: 'reference' },
+					label: 'Sorrel',
+					items: [
+						{ label: 'Download', slug: 'download' },
+					],
+				},
+				{
+					label: 'Get involved',
+					items: [
+						{ label: 'Feedback', slug: 'feedback' },
+					],
 				},
 			],
 		}),

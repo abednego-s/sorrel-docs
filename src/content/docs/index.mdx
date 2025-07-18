@@ -1,36 +1,62 @@
 ---
-title: Welcome to Starlight
-description: Get started building your docs site with Starlight.
+title: Capture every idea, craft every story.
+head:
+  - tag: title
+    content: Sorrel — a free writing app for Mac & Windows
+description: Sorrel - a free writing app for Mac & Windows
 template: splash
 hero:
-  tagline: Congrats on setting up a new Starlight project!
-  image:
-    file: ../../assets/houston.webp
+  tagline: The free writing app for focused minds. Available for Mac & Windows.
   actions:
-    - text: Example Guide
-      link: /guides/example/
-      icon: right-arrow
-    - text: Read the Starlight docs
-      link: https://starlight.astro.build
+    - text: Download
+      link: /download
+    - text: Guides
+      link: /guides/installation
       icon: external
       variant: minimal
 ---
 
-import { Card, CardGrid } from '@astrojs/starlight/components';
+import { Card, CardGrid, LinkButton } from '@astrojs/starlight/components';
 
-## Next steps
+![Sorrel App](../../assets/sorrel-desktop.png)
 
-<CardGrid stagger>
-	<Card title="Update content" icon="pencil">
-		Edit `src/content/docs/index.mdx` to see this page change.
+
+<div class="no-border-cards">
+<CardGrid>
+  <Card>
+    ##### Your Writing, Organized
+
+		A desktop application designed for writers of all kinds. Whether you're a novelist, blogger, student, or professional, Sorrel provides the tools you need to stay organized, focused, and productive.
+
+		##### Simple Thoughts. Seamless Flow.
+		A clean, minimalist interface helps you focus on what matters most: your words.
+  </Card>
+  <Card>
+		![Sorrel Logo](../../assets/sorrel-app-demo-cropped.png)
+  </Card>
+</CardGrid>
+</div>
+
+
+### Your Creative Companion
+Sorrel empowers your writing process with a suite of essential tools:
+
+<CardGrid>
+	<Card title="Organized and Focused Workflow">
+		Seamlessly manage multiple workspaces, outline long-form content with ease, and drown out distractions with a dedicated **Focus Mode**.
 	</Card>
-	<Card title="Add new content" icon="add-document">
-		Add Markdown or MDX files to `src/content/docs` to create new pages.
+	<Card title="Instant Access to Your Ideas">
+		Quickly find what you need with an intuitive tagging system for keywords and materials, complemented by a powerful search function for specific notes.
 	</Card>
-	<Card title="Configure your site" icon="setting">
-		Edit your `sidebar` and other config in `astro.config.mjs`.
+	<Card title="Markdown Support">
+		Utilize Markdown syntax support to format your writing effortlessly, allowing you to focus on creativity without getting bogged down intechnicalities.
 	</Card>
-	<Card title="Read the docs" icon="open-book">
-		Learn more in [the Starlight Docs](https://starlight.astro.build/).
+	<Card title="Export Made Easy">
+		Share your work in a variety of formats including **DOCX**, **PDF**, **HTML**, and **Markdown**, offering ultimate flexibility for your publishing needs.
 	</Card>
 </CardGrid>
+
+<div class="get-sorrel">
+	### Catch Every Spark
+	<LinkButton href="/download">Get Sorrel</LinkButton>
+</div>

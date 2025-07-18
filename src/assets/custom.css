@@ -1,0 +1,27 @@
+:root {
+  /* Override the default text color */
+  --sl-color-text: #1e293b; /* Slate 800 */
+
+  /* Override the default accent color (used for links) */
+  --sl-color-accent: #25bd02; /* Orange 600 */
+
+  /* Override the default heading color */
+  --sl-color-headings: #1e293b;
+}
+
+/* Example of changing the color in dark mode */
+:root[data-theme="dark"] {
+  --sl-color-text: #e2e8f0; /* Slate 200 */
+  --sl-color-text-accent: #94ee80; /* Orange 500 */
+  --sl-color-headings: #e2e8f0;
+}
+
+/* Remove the border from cards inside the .no-border-cards container */
+.no-border-cards .card {
+  border-style: none;
+}
+
+.get-sorrel {
+  text-align: center;
+  margin: 50px 0;
+}
