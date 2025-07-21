@@ -19,7 +19,7 @@ Workspaces are ideal for keeping your work organized across different themes, cl
 
 To create a new workspace:
 
-1. Click the **Home** icon in the left sidebar to go to the home screen.
+1. Go to **File > New Workspace**.
 2. In the **Create a new workspace** section, type a name for your new workspace.
 3. Click **Create**.
 
