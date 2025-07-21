@@ -16,47 +16,14 @@ hero:
       variant: minimal
 ---
 
-import { Card, CardGrid, LinkButton } from '@astrojs/starlight/components';
+import IntroductionSection from '../../components/home/IntroductionSection.mdx';
+import FeatureSection from '../../components/home/FeatureSection.mdx';
+import VideoSection from '../../components/home/VideoSection.mdx';
+import DownloadSection from '../../components/home/DownloadSection.mdx';
 
 ![Sorrel App](../../assets/sorrel-desktop.png)
 
-
-<div class="no-border-cards">
-<CardGrid>
-  <Card>
-    ##### Your Writing, Organized
-
-		A desktop application designed for writers of all kinds. Whether you're a novelist, blogger, student, or professional, Sorrel provides the tools you need to stay organized, focused, and productive.
-
-		##### Simple Thoughts. Seamless Flow.
-		A clean, minimalist interface helps you focus on what matters most: your words.
-  </Card>
-  <Card>
-		![Sorrel Logo](../../assets/sorrel-app-demo-cropped.png)
-  </Card>
-</CardGrid>
-</div>
-
-
-### Your Creative Companion
-Sorrel empowers your writing process with a suite of essential tools:
-
-<CardGrid>
-	<Card title="Organized and Focused Workflow">
-		Seamlessly manage multiple workspaces, outline long-form content with ease, and drown out distractions with a dedicated **Focus Mode**.
-	</Card>
-	<Card title="Instant Access to Your Ideas">
-		Quickly find what you need with an intuitive tagging system for keywords and materials, complemented by a powerful search function for specific notes.
-	</Card>
-	<Card title="Markdown Support">
-		Utilize Markdown syntax support to format your writing effortlessly, allowing you to focus on creativity without getting bogged down intechnicalities.
-	</Card>
-	<Card title="Export Made Easy">
-		Share your work in a variety of formats including **DOCX**, **PDF**, **HTML**, and **Markdown**, offering ultimate flexibility for your publishing needs.
-	</Card>
-</CardGrid>
-
-<div class="get-sorrel">
-	### Take Sorrel for a spin — it’s on us.
-	<LinkButton href="/download">Get Sorrel Now</LinkButton>
-</div>
+<IntroductionSection />
+<FeatureSection />
+<VideoSection />
+<DownloadSection />
