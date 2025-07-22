@@ -20,6 +20,13 @@ export default defineConfig({
 						href: '/favicon.ico',
 					},
 				},
+				{
+					tag: 'meta',
+					attrs: {
+						property: 'og:image',
+						content: '/sorrel-open-graph.jpg',
+					},
+				},
 				// Add Umami script only in production
 				// @ts-ignore
 				...(isProduction ? [{
