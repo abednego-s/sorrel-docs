@@ -47,12 +47,16 @@ export default defineConfig({
 				{
 					label: 'Getting started',
 					items: [
-						{ label: 'Download and Install Sorrel', slug: 'guides/installation' },
-						{ label: 'Managing Workspaces', slug: 'guides/workspace' },
-						{ label: 'Create your first note', slug: 'guides/create-note' },
-						{ label: 'Export', slug: 'guides/export' },
-						{ label: 'Update Sorrel', slug: 'guides/update' },
+						{ label: 'Download and Install Sorrel', slug: 'getting-started/installation' },
+						{ label: 'Managing Workspaces', slug: 'getting-started/workspace' },
+						{ label: 'Create your first note', slug: 'getting-started/create-note' },
+						{ label: 'Export', slug: 'getting-started/export' },
+						{ label: 'Update Sorrel', slug: 'getting-started/update' },
 					],
+				},
+				{
+					label: 'Writing & Formatting',
+					autogenerate: { directory: 'formatting' }
 				},
 				{
 					label: 'Sorrel',
