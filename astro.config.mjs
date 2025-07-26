@@ -27,6 +27,55 @@ export default defineConfig({
 						content: '/sorrel-open-graph.jpg',
 					},
 				},
+				{
+					tag: 'meta',
+					attrs: {
+						property: 'og:title',
+						content: 'Sorrel – Free Writing App for Mac & Windows',
+					},
+				},
+				{
+					tag: 'meta',
+					attrs: {
+						property: 'og:description',
+						content: 'Stay focused and organized with Sorrel, a free writing app for Mac & Windows. Designed to help you write more, with zero distractions — even offline.',
+					},
+				},
+				{
+					tag: 'meta',
+					attrs: {
+						property: 'og:url',
+						content: 'https://sorrel.pages.dev',
+					},
+				},
+				{
+					tag: 'meta',
+					attrs: {
+						name: 'twitter:card',
+						content: 'summary_large_image',
+					},
+				},
+				{
+					tag: 'meta',
+					attrs: {
+						name: 'twitter:title',
+						content: 'Sorrel – Free Writing App for Mac & Windows',
+					},
+				},
+				{
+					tag: 'meta',
+					attrs: {
+						name: 'twitter:description',
+						content: 'Stay focused and organized with Sorrel, a free writing app for Mac & Windows. Designed to help you write more, with zero distractions — even offline.',
+					},
+				},
+				{
+					tag: 'meta',
+					attrs: {
+						name: 'twitter:image',
+						content: '/sorrel-open-graph.jpg',
+					},
+				},
 				// Add Umami script only in production
 				// @ts-ignore
 				...(isProduction ? [{
